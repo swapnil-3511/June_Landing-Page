@@ -1,0 +1,224 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing:border-box;
+}
+
+
+html,body{
+    width:100%;
+    height:100%;
+}
+
+
+#main{
+    width:100%;
+    min-height:100vh;
+}
+
+#top{
+    width:100%;
+    min-height:60vh;
+    /* background-color:red; */
+    background-image: url(https://images.unsplash.com/photo-1619120238346-978e07731e77?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* TOP  */
+#overlay{
+    position: relative;
+    width:100%;
+    min-height:inherit;
+    background-color:rgba(0,0,0,0.281);
+}
+#text{
+    align-items:center;
+    display: flex  ;
+    position: absolute;
+    bottom:20%;
+    padding: 0  10vw;
+    /* width 100%; */
+    /* height:120px; */
+    /* background-color:rgb(238, 173, 213); */
+} 
+
+#text h1{
+    display: flex;
+    justify-content: space-between;
+    font-size: 6vw;
+    color: aliceblue;
+    font-weight: 500;
+    align-items: center;
+}
+
+#textright p{
+    font-size: 12px;
+    width:60%;
+    justify-content: space-between;
+    color: #fff;
+}
+
+#textright i{
+    color:#fff ;
+}
+
+
+
+
+
+
+
+#bottom{
+    display :flex;
+    width:100%;
+    min-height:40vh;
+    background-color:rgb(130, 130, 211);
+}
+
+#b1{
+    width:25%;
+    min-height:inherit;
+    background-color: #fff;
+   padding: 30px;
+    /* background-color:rgb(146, 174, 194); */
+}
+
+#b1 p{
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+
+
+#b2{
+    width:25%;
+    min-height:inherit;
+    /* background-color:rgb(20, 205, 97); */
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://images.unsplash.com/photo-1576487248805-cf45f6bcc67f?q=80&w=1106&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    /* background-image: url(https://images.unsplash.com/photo-1565523925028-812f891b0e8c?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
+}
+
+#b3{
+    width: 20%;
+    min-height:inherit;
+    /* background-color: blue; */
+}
+#b3top{
+    width:100%;
+    min-height:20vh;
+    background-color:rgb(249, 140, 8);
+    /* background-size: cover; */
+    /* background-position: center; */
+    padding: 20px;
+    color:#fff;
+    /* background-image: url(https://images.unsplash.com/photo-1536408157291-aef6d736e2cd?q=80&w=968&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
+}
+
+#b3top p{
+    margin-top: 10px; 
+    font-size:10px ;
+}
+
+#b3bottom{
+    width:100%;
+    min-height:20vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://images.unsplash.com/photo-1536408157291-aef6d736e2cd?q=80&w=968&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-color:rgb(126, 229, 8);
+}
+
+
+#b4{
+    width:30%;
+    min-height:inherit;
+    /* background-color:rgb(0, 120, 118); */
+    /* background-size: cover; */
+    /* background-position: center; */
+    padding:30px ;
+    background-color:#444;
+    color:#fff;
+}
+
+
+.notify{
+    margin-top:20px ;
+    display: flex;
+    justify-content:space-between;
+}
+
+.notify #photo{
+     width: 40px;
+     height: 40%;
+     border-radius:50%;
+     background-color: rgb(180, 42, 42);
+
+}
+
+.notify p{
+    width: 86%;
+    font-size: 12px;
+}
+
+
+
+
+
+@media(max-width:500px){
+    #overlay #text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #overlay #text #textright{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #overlay #text #textright  p{
+        width: initial;
+        margin-top: 20px;
+    }
+ 
+    #overlay #text #textright #icons{
+        margin-top: 30px;
+    }
+
+    #text h1{
+    font-style: 10px;
+    }
+
+    #bottom{
+        min-height: 20vh;
+    }
+
+    #bottom{
+        flex-direction: column;
+    }
+
+    #b1{
+        width: 100px;
+    }
+    #b2{
+        width: 100px;
+        min-height: 40vh;
+    }
+    #b3{
+        flex-direction: column;
+        width: 100px;
+    }
+    #b3bottom{
+        min-height: 40vh;
+    }
+
+    #b4{
+        width: 100px;
+    }
+
+
+
+}
